@@ -212,8 +212,8 @@ def process_all_jira_links(json_file_path, email, password):
 if __name__ == "__main__":
     # Define paths and credentials
     json_file_path = "C:/Users/KeyurNallani/KeyurLogsTest/258/json/258_test_cases.json"  # Replace with your JSON file path
-    email = "keyur.nallani@positioninguniversal.com"  # Your email address
-    password = "Kn162000@$$"  # Your password
+    email = "email@website.com"  # Your email address
+    password = "password"  # Your password
 
     # Process all JIRA links and log in
     process_all_jira_links(json_file_path, email, password)
