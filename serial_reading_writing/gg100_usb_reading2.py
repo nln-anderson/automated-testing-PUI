@@ -1,4 +1,4 @@
-# Reads and writes to serial
+# Reads and writes to serial bus
 
 import serial
 import serial.tools.list_ports
