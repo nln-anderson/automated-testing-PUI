@@ -1,3 +1,5 @@
+# Reads and writes to serial port
+
 import serial
 import serial.tools.list_ports
 import json
