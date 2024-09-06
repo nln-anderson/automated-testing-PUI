@@ -45,9 +45,10 @@ def read_from_serial(ser_obj: serial.Serial) -> None:
     line = ser_obj.readline()
     line = line.decode('utf-8', errors="ignore").strip()
     
-    # this is to ensure no blank lines
+    # this is to ensure no blank lines are printed
     if line:
         print(line)
+        check_message_do_action(line, "OK", send_command, ser_obj, "shipping")
         with open('serial_reading_writing/terminal_log.txt', 'a') as file:
             file.write(f"{line}\n")
 
@@ -60,6 +61,16 @@ def send_command(ser_obj: serial.Serial, command: str) -> None:
     """Sends the command to the device."""
     command_message = f"{command}\r\n".encode("utf-8")
     ser_obj.write(command_message)
+    print(command_message)
+    with open('serial_reading_writing/terminal_log.txt', 'a') as file:
+        file.write(f"{command_message}\n")
+
+
+def check_message_do_action(message: str, target: str, func: callable, *args, **kwargs) -> None:
+    """Checks message and performs a function if necessary."""
+    if message == target:
+        print("Target Message Found")
+        func(*args, **kwargs)
 
 def main():
     # Load preliminary data
