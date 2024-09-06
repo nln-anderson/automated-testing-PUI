@@ -1,0 +1,8 @@
+{
+    "settings":{
+        "port_settings":{
+            "baudrate": 115200,
+            "timeout": 1
+        }
+    }
+}
