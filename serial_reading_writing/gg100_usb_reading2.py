@@ -4,7 +4,7 @@ import json
 
 def load_json_settings() -> json:
     """Returns the data from the json file for later use"""
-    with open('settings.json', 'r') as file:
+    with open('serial_reading_writing/settings.json', 'r') as file:
         data = json.load(file)
     return data
 
@@ -48,7 +48,7 @@ def read_from_serial(ser_obj: serial.Serial) -> None:
     # this is to ensure no blank lines
     if line:
         print(line)
-        with open('terminal_log.txt', 'a') as file:
+        with open('serial_reading_writing/terminal_log.txt', 'a') as file:
             file.write(f"{line}\n")
 
 def read_loop(ser_obj: serial.Serial) -> None:
