@@ -1585,3 +1585,118 @@ OK
 33.111 system will wakeup when switch is pressed
 33.123 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  flash save
 33.129 system goodbye!
+set,1,60
+2.465 Switch released > 2 sec, wakeup
+2.468
+>> MAIN APP <<
+2.470 ++++++++++++++++++++state change: Heartbeat Shutdown -> Heartbeat Get GPS
+2.478 cell shutdown
+2.480 ------------------cell change state: power off
+2.485 go shutdown
+2.487 gps wake
+2.488 VBOOST is enabled!!!
+2.491 GPS power up!!!
+2.593 gps wake
+2.594 VBOOST is enabled!!!
+2.597 GPS power up!!!
+Buf = $CCMSG,GSV,1,0 | Length = 14
+Buf = $CCMSG,VTG,1,1 | Length = 14
+Buf = $CCCFG,1 | Length = 8
+Waking-up on normal state (using Settings #2): NETWORK_MAX_TIMEOUT 60000
+5.787 gps sats=0, hac= 999
+6.290 cmd Recieved:: set,1,60
+6.531 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  flash len 369
+10.125 gps sats=0, hac= 999
+12.174 gps got data 0,  536881328
+12.177 gps sats=5, hac= 18
+12.698 gps has good fix 2024/09/09 21:42:12 328341184 -1171643392 s5/18 0k 0* 3134mV 0dbm
+12.706 state leave heartbeat get fix on success
+12.711 ++++++++++++++++++++state change: Heartbeat Get GPS -> Hearbeat Report
+12.718 gps shutdown
+12.720 cell wake rx = 0, D2H = 0
+12.723 VBOOST is enabled!!!
+12.827 LTE Baseband power up!!!
+12.830 1)NOTICE: CellHandler_state = power off
+12.834 ------------------cell change state: wait for sim
+12.840 LTE wake up!!!
+13.034 RX is up!!!
+17.037 D2H still low!!!
+17.039 HIFC over
+[09/09/24 21:42:15] MODEM: RECV 15 |
+[09/09/24 21:42:15] MODEM: SEND 11|AT+CFUN=1
+17.553 cell << AT+CFUN=1
+17.556 LOC_HEARTBEAT generated
+17.559 loc add: [Heartbeat] - 2024/09/09 21:42:12 328341184 -1171643392 s5/18 0k 0* 3134mV 0dbm
+17.568 addGpsLoc
+[09/09/24 21:42:16] MODEM: RECV 6 |
+OK
+18.076 cell >> OK
+[09/09/24 21:42:16] MODEM: SEND 12|AT+SQNCCID
+18.085 cell << AT+SQNCCID
+[09/09/24 21:42:16] MODEM: RECV 47 |
++SQNCCID: "8912230102138928720",""
+OK
++18.598 cell >>
++SQNCCID: "8912230102138928720",""
+OK
++
+[09/09/24 21:42:16] MODEM: SEND 14|AT+SQNSIMST?
+18.630 cell << AT+SQNSIMST?
+[09/09/24 21:42:17] MODEM: RECV 1 | C
+20.639 RESEND last at command
+[09/09/24 21:42:18] MODEM: SEND 16|AT+SQNSIMST?
+20.649 cell << AT+SQNSIMST?
+22.652 RESEND last at command
+[09/09/24 21:42:20] MODEM: SEND 18|AT+SQNSIMST?
+22.662 cell << AT+SQNSIMST?
+[09/09/24 21:42:21] MODEM: SEND 11|AT+CGSN=1
+23.672 cell << AT+CGSN=1
+25.675 RESEND last at command
+[09/09/24 21:42:23] MODEM: SEND 13|AT+CGSN=1
+25.684 cell << AT+CGSN=1
+27.687 RESEND last at command
+[09/09/24 21:42:25] MODEM: SEND 15|AT+CGSN=1
+27.697 cell << AT+CGSN=1
+[09/09/24 21:42:26] MODEM: SEND 14|AT+SQNTMON=1
+28.707 cell << AT+SQNTMON=1
+30.710 RESEND last at command
+[09/09/24 21:42:28] MODEM: SEND 16|AT+SQNTMON=1
+30.720 cell << AT+SQNTMON=1
+32.723 RESEND last at command
+[09/09/24 21:42:30] MODEM: SEND 18|AT+SQNTMON=1
+32.733 cell << AT+SQNTMON=1
+[09/09/24 21:42:31] MODEM: SEND 11|AT+CFUN=1
+33.743 cell << AT+CFUN=1
+35.746 RESEND last at command
+[09/09/24 21:42:33] MODEM: SEND 13|AT+CFUN=1
+35.755 cell << AT+CFUN=1
+37.758 RESEND last at command
+[09/09/24 21:42:35] MODEM: SEND 15|AT+CFUN=1
+37.768 cell << AT+CFUN=1
+[09/09/24 21:42:36] MODEM: SEND 12|AT+SQNCCID
+38.777 cell << AT+SQNCCID
+40.780 RESEND last at command
+[09/09/24 21:42:38] MODEM: SEND 14|AT+SQNCCID
+40.789 cell << AT+SQNCCID
+42.793 RESEND last at command
+[09/09/24 21:42:40] MODEM: SEND 16|AT+SQNCCID
+42.803 cell << AT+SQNCCID
+[09/09/24 21:42:41] MODEM: SEND 14|AT+SQNSIMST?
+43.813 cell << AT+SQNSIMST?
+45.816 RESEND last at command
+[09/09/24 21:42:43] MODEM: SEND 16|AT+SQNSIMST?
+45.826 cell << AT+SQNSIMST?
+47.829 RESEND last at command
+[09/09/24 21:42:45] MODEM: SEND 18|AT+SQNSIMST?
+47.839 cell << AT+SQNSIMST?
+[09/09/24 21:42:46] MODEM: SEND 11|AT+CGSN=1
+48.849 cell << AT+CGSN=1
+50.852 RESEND last at command
+[09/09/24 21:42:48] MODEM: SEND 13|AT+CGSN=1
+50.861 cell << AT+CGSN=1
+52.864 RESEND last at command
+[09/09/24 21:42:50] MODEM: SEND 15|AT+CGSN=1
+52.874 cell << AT+CGSN=1
+[09/09/24 21:42:51] MODEM: SEND 14|AT+SQNTMON=1
+53.884 cell << AT+SQNTMON=1
+set,1,60

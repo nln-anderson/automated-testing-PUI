@@ -50,7 +50,15 @@ def seperate_by_index(boot_starts_index: list[int]) -> None:
         # Write the slice of lines to a new file
         with open(output_file, 'w') as out_f:
             out_f.writelines(logs[start:end])
-                
+
+def check_target_message(target: str) -> None:
+    """Determines if target message is in logs. If so, it prints the line index."""
+    with open('serial_reading_writing/terminal_log.txt', 'r') as file:
+        logs = file.readlines()
+    
+    for loop_var in range(len(logs)):
+        if target in logs[loop_var]:
+            print(f"Target message found in line {loop_var+1}")
 
 def main() -> None:
     create_settings = input("Would you like to create a seperate log for settings (Y/N): ")
@@ -59,6 +67,9 @@ def main() -> None:
     create_settings = input("Would you like to create a seperate log for each boot (Y/n): ")
     if create_settings.upper() == "Y":
         seperate_by_index(get_boot_index())
+    create_settings = input("Would you like to search for a target message (Y/n): ")
+    if create_settings.upper() == "Y":
+        check_target_message(input("Enter the target message: "))
 
 if __name__ == "__main__":
     main()
