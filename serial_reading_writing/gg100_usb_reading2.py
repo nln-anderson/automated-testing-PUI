@@ -96,7 +96,7 @@ def main():
                             settings['settings']['port_settings']['timeout'])
     
     # Send the settings command
-    send_command(ser_obj, "settings")
+    send_command(ser_obj, "set,1,60")
     
     # Start reading
     read_loop(ser_obj)
