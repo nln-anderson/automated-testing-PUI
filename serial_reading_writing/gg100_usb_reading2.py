@@ -50,7 +50,7 @@ def read_from_serial(ser_obj: serial.Serial) -> None:
     # this is to ensure no blank lines are printed
     if line:
         print(line)
-        check_message_do_action(line, "OK", send_command, ser_obj, "shipping")
+        check_message_do_action(line, settings['commands']['target'], send_command, ser_obj, settings['commands']['command'])
         with open('serial_reading_writing/terminal_log.txt', 'a') as file:
             file.write(f"{line}\n")
 
@@ -63,10 +63,9 @@ def send_command(ser_obj: serial.Serial, command: str) -> None:
     """Sends the command to the device."""
     command_message = f"{command}\r\n".encode("utf-8")
     ser_obj.write(command_message)
-    print(command_message)
+    print(command)
     with open('serial_reading_writing/terminal_log.txt', 'a') as file:
-        file.write(f"{command_message}\n")
-
+        file.write(f"{command}\n")
 
 def check_message_do_action(message: str, target: str, func: callable, *args, **kwargs) -> None:
     """Checks message and performs a function if necessary."""
@@ -74,13 +73,25 @@ def check_message_do_action(message: str, target: str, func: callable, *args, **
         print("Target Message Found")
         func(*args, **kwargs)
 
-def main():
-    # Load preliminary data
-    settings = load_json_settings()
+def ask_for_commands() -> list[str, str]:
+    """Asks the user for commands that should be inputted, as well as the trigger for them. Returns a dictionary with key as target and value and command."""
+    target_and_commands = []
+    break_bool = True
+    while break_bool == True:
+        if input("Would you like to add a message/command pair? (Y/N): ").upper() == "Y":
+            target = input("Message to look for: ")
+            command = input(f"Command to send after {target}: ")
+            target_and_commands.append[target, command]
+        else:
+            break_bool = False
+    
+    return target_and_commands
 
+def main():
     # Get serial connection
     list_serial_ports()
     com_target = ask_com_connection()
+
     ser_obj = open_com_port(com_target, settings['settings']['port_settings']['baudrate'],
                             settings['settings']['port_settings']['timeout'])
     
@@ -91,4 +102,5 @@ def main():
     read_loop(ser_obj)
 
 if __name__ == "__main__":
+    settings = load_json_settings()
     main()

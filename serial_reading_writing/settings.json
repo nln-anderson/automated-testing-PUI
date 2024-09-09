@@ -4,5 +4,9 @@
             "baudrate": 115200,
             "timeout": 1
         }
+    },
+    "commands":{
+        "target": "OK",
+        "command": "settings"
     }
 }
