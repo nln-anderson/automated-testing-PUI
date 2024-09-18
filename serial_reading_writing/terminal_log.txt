@@ -1700,3 +1700,312 @@ OK
 [09/09/24 21:42:51] MODEM: SEND 14|AT+SQNTMON=1
 53.884 cell << AT+SQNTMON=1
 set,1,60
+10.130 gps sats=0, hac= 999
+20.344 gps sats=0, hac= 999
+30.059 gps sats=0, hac= 999
+40.273 gps sats=0, hac= 999
+127.167 D2H still low!!!
+127.169 HIFC over
+[09/09/24 22:41:06] MODEM: RECV 15 |
+[09/09/24 22:41:06] MODEM: SEND 11|AT+CFUN=1
+127.683 cell << AT+CFUN=1
+[09/09/24 22:41:07] MODEM: RECV 6 |
+OK
+128.192 cell >> OK
+[09/09/24 22:41:07] MODEM: SEND 12|AT+SQNCCID
+128.201 cell << AT+SQNCCID
+[09/09/24 22:41:07] MODEM: RECV 57 |
++SQNCCID: "8912230102138928720",""
+OK
++CEREG: 2
+128.715 cell >>
++SQNCCID: "8912230102138928720",""
+OK
++CEREG: 2
+[09/09/24 22:41:07] MODEM: SEND 14|AT+SQNSIMST?
+128.748 cell << AT+SQNSIMST?
+[09/09/24 22:41:08] MODEM: RECV 24 |
++SQNSIMST: 0,5
+OK
+129.259 cell >>
++SQNSIMST: 0,5
+OK
+129.263 cell sim ready
+[09/09/24 22:41:08] MODEM: SEND 11|AT+CGSN=1
+129.272 cell << AT+CGSN=1
+[09/09/24 22:41:08] MODEM: RECV 34 |
++CGSN: "355014510232285"
+OK
+129.783 cell >>
++CGSN: "355014510232285"
+OK
+129.788 imei buf : 355014510232285
+[09/09/24 22:41:08] MODEM: SEND 14|AT+SQNTMON=1
+129.820 cell << AT+SQNTMON=1
+[09/09/24 22:41:10] MODEM: RECV 81 |
++SQNTMONS: 1,0,23
+OK
++SQNTMONS: 1,0,23
++CEREG: 5,"280A","009C5802",7
+131.336 cell >>
++SQNTMONS: 1,0,23
+OK
++SQNTMONS: 1,0,23
++CEREG: 5,"280A","009C5802",7
+131.345 Modem temperature  = 23
+131.349 ------------------cell change state: get modem info
+131.354 temperatue is  23 C degree,
+131.858 ------------------cell change state: set chip debug log
+132.364 ------------------cell change state: wait for network
+[09/09/24 22:41:12] MODEM: SEND 8|AT+CSQ
+133.176 cell << AT+CSQ
+[09/09/24 22:41:12] MODEM: RECV 21 |
++CSQ: 10,99
+OK
+133.686 cell >>
++CSQ: 10,99
+OK
+133.690 cell rssi=-93
+[09/09/24 22:41:12] MODEM: SEND 12|AT+CEREG=2
+133.699 cell << AT+CEREG=2
+[09/09/24 22:41:13] MODEM: RECV 6 |
+OK
+134.208 cell >> OK
+[09/09/24 22:41:13] MODEM: SEND 11|AT+CEREG?
+134.217 cell << AT+CEREG?
+[09/09/24 22:41:13] MODEM: RECV 41 |
++CEREG: 2,5,"280A","009C5802",7
+OK
+134.729 cell >>
++CEREG: 2,5,"280A","009C5802",7
+OK
+134.735 cell comm avail=yes
+[09/09/24 22:41:13] MODEM: SEND 10|AT+CCLK?
+134.744 cell << AT+CCLK?
+system clock 32 MHz
+system startup ... ...
+Copyright (c) 2023 Positioning Universal Inc.
+VERSION: GG100 MAIN MCU V1.0(Sep  6 2024 18:45:30)
+Reset Reason Register : c000000
+Current device state is :  
+RTC Date and Time : [09/09/24 22:41:34]
+0.036 ERR:consts apn, dman server ip/port not stored in flash
+0.042 +++++++++++++++++++++setting init  ver c0d0e0f len 171 date 1725921681
+0.049 Next state is 8
+0.252 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> switch released, switch State = 1
+0.258 System wakeup: bootup count = 176, switch status = 0, mems interrupt 0
+2.465 Switch released > 2 sec, wakeup
+2.468
+>> MAIN APP <<
+2.470 ++++++++++++++++++++state change: Heartbeat Shutdown -> Heartbeat Get GPS
+2.478 cell shutdown
+2.480 ------------------cell change state: power off
+2.485 go shutdown
+2.487 gps wake
+2.488 VBOOST is enabled!!!
+2.491 GPS power up!!!
+2.593 gps wake
+2.594 VBOOST is enabled!!!
+2.597 GPS power up!!!
+Buf = $CCMSG,GSV,1,0 | Length = 14
+Buf = $CCMSG,VTG,1,1 | Length = 14
+Buf = $CCCFG,1 | Length = 8
+Waking-up on normal state (using Settings #2): NETWORK_MAX_TIMEOUT 60000
+5.786 gps sats=0, hac= 999
+10.372 gps sats=0, hac= 999
+20.086 gps sats=0, hac= 999
+30.299 gps sats=0, hac= 999
+10.130 gps sats=0, hac= 999
+20.344 gps sats=0, hac= 999
+30.057 gps sats=0, hac= 999
+40.271 gps sats=0, hac= 999
+50.484 gps sats=0, hac= 999
+60.198 gps sats=0, hac= 999
+70.416 gps sats=0, hac= 999
+80.139 gps sats=0, hac= 999
+90.359 gps sats=0, hac= 999
+100.082 gps sats=0, hac= 999
+110.306 gps sats=0, hac= 999
+120.029 gps sats=0, hac= 999
+130.251 gps sats=0, hac= 999
+140.474 gps sats=0, hac= 999
+150.197 gps sats=0, hac= 999
+160.420 gps sats=0, hac= 999
+170.143 gps sats=0, hac= 999
+180.365 gps sats=0, hac= 999
+190.080 gps sats=0, hac= 999
+200.312 gps sats=0, hac= 999
+210.005 gps sats=0, hac= 999
+220.218 gps sats=0, hac= 999
+230.454 gps sats=0, hac= 999
+240.146 gps sats=0, hac= 999
+241.170 state leave disconnect alert get fix on timeout
+241.175 ++++++++++++++++++++state change: Disconnect Alert Get Fix -> Disconnect Alert
+241.183 gps shutdown
+241.185 cell wake rx = 0, D2H = 0
+241.188 VBOOST is enabled!!!
+241.292 LTE Baseband power up!!!
+241.295 1)NOTICE: CellHandler_state = power off
+241.299 ------------------cell change state: wait for sim
+241.305 LTE wake up!!!
+241.406 RX is up!!!
+245.409 D2H still low!!!
+245.411 HIFC over
+[01/01/00 00:04:05] MODEM: RECV 15 |
+[01/01/00 00:04:05] MODEM: SEND 11|AT+CFUN=1
+245.925 cell << AT+CFUN=1
+[01/01/00 00:04:06] MODEM: RECV 6 |
+OK
+246.434 cell >> OK
+[01/01/00 00:04:06] MODEM: SEND 12|AT+SQNCCID
+246.443 cell << AT+SQNCCID
+[01/01/00 00:04:06] MODEM: RECV 57 |
++SQNCCID: "8912230102138928720",""
+OK
++CEREG: 2
+246.957 cell >>
++SQNCCID: "8912230102138928720",""
+OK
++CEREG: 2
+[01/01/00 00:04:06] MODEM: SEND 14|AT+SQNSIMST?
+246.990 cell << AT+SQNSIMST?
+[01/01/00 00:04:07] MODEM: RECV 24 |
++SQNSIMST: 0,5
+OK
+247.501 cell >>
++SQNSIMST: 0,5
+OK
+247.505 cell sim ready
+[01/01/00 00:04:07] MODEM: SEND 11|AT+CGSN=1
+247.514 cell << AT+CGSN=1
+[01/01/00 00:04:07] MODEM: RECV 34 |
++CGSN: "355014510232285"
+OK
+248.025 cell >>
++CGSN: "355014510232285"
+OK
+248.030 imei buf : 355014510232285
+[01/01/00 00:04:08] MODEM: SEND 14|AT+SQNTMON=1
+248.062 cell << AT+SQNTMON=1
+[01/01/00 00:04:09] MODEM: RECV 81 |
++SQNTMONS: 1,0,24
+OK
++SQNTMONS: 1,0,24
++CEREG: 5,"280A","009C5802",7
+249.578 cell >>
++SQNTMONS: 1,0,24
+OK
++SQNTMONS: 1,0,24
++CEREG: 5,"280A","009C5802",7
+249.587 Modem temperature  = 24
+249.591 ------------------cell change state: get modem info
+250.097 ------------------cell change state: set chip debug log
+250.603 ------------------cell change state: wait for network
+[01/01/00 00:04:11] MODEM: SEND 8|AT+CSQ
+251.415 cell << AT+CSQ
+[01/01/00 00:04:11] MODEM: RECV 21 |
++CSQ: 14,99
+OK
+251.925 cell >>
++CSQ: 14,99
+OK
+251.929 cell rssi=-85
+[01/01/00 00:04:11] MODEM: SEND 12|AT+CEREG=2
+251.938 cell << AT+CEREG=2
+[01/01/00 00:04:12] MODEM: RECV 6 |
+OK
+252.447 cell >> OK
+[01/01/00 00:04:12] MODEM: SEND 11|AT+CEREG?
+252.456 cell << AT+CEREG?
+[01/01/00 00:04:12] MODEM: RECV 41 |
++CEREG: 2,5,"280A","009C5802",7
+OK
+252.968 cell >>
++CEREG: 2,5,"280A","009C5802",7
+OK
+252.974 cell comm avail=yes
+[01/01/00 00:04:12] MODEM: SEND 10|AT+CCLK?
+252.983 cell << AT+CCLK?
+[01/01/00 00:04:13] MODEM: RECV 39 |
++CCLK: "24/09/09,16:38:52-28"
+OK
+253.495 cell >>
++CCLK: "24/09/09,16:38:52-28"
+OK
+253.501 Valid Modem time, Updating RTC
+[09/09/24 23:38:52] RTC: Cycle(0)
+[09/09/24 23:38:52] MODEM: SEND 12|AT+CGATT=1
+253.517 cell << AT+CGATT=1
+[09/09/24 23:38:52] MODEM: RECV 6 |
+OK
+254.026 cell >> OK
+[09/09/24 23:38:52] MODEM: SEND 11|AT+CGACT?
+254.035 cell << AT+CGACT?
+[09/09/24 23:38:53] MODEM: RECV 21 |
++CGACT: 1,1
+OK
+254.545 cell >>
++CGACT: 1,1
+OK
+254.550 ------------------cell change state: setup socket
+[09/09/24 23:38:53] MODEM: SEND 12|AT+SQNGUTI
+255.061 cell << AT+SQNGUTI
+[09/09/24 23:38:54] MODEM: RECV 33 |
+311480,FA28,28,F82801F0
+OK
+255.572 cell >>
+311480,FA28,28,F82801F0
+OK
+[09/09/24 23:38:54] MODEM: SEND 12|AT+SQNSH=1
+255.585 cell << AT+SQNSH=1
+[09/09/24 23:38:54] MODEM: RECV 6 |
+OK
+256.093 cell >> OK
+[09/09/24 23:38:54] MODEM: SEND 30|AT+SQNSCFG=1,1,1500,0,600,50
+256.105 cell << AT+SQNSCFG=1,1,1500,0,600,50
+[09/09/24 23:38:55] MODEM: RECV 6 |
+OK
+256.616 cell >> OK
+[09/09/24 23:38:55] MODEM: SEND 23|AT+SQNSCFGEXT=1,2,1,5
+256.627 cell << AT+SQNSCFGEXT=1,2,1,5
+[09/09/24 23:38:55] MODEM: RECV 6 |
+OK
+257.137 cell >> OK
+[09/09/24 23:38:55] MODEM: SEND 44|AT+SQNSD=1,1,50010,"52.37.248.117",0,198,1
+257.152 cell << AT+SQNSD=1,1,50010,"52.37.248.117",0,198,1
+[09/09/24 23:38:56] MODEM: RECV 6 |
+OK
+257.664 cell >> OK
+257.667 ------------------cell change state: send packets
+257.672 LOC_DISCONNECT_ALERT generated
+257.676 loc add: [Disconnect] - 1970/01/01 00:00:00 328341632 -1171643904 s0/0 0k 0* 0mV 0dbm
+257.685 addTowerLoc
+258.187 addTowerLoc
+258.189 loc send: [Disconnect], packet remain = 1, len = 44
+[09/09/24 23:38:56] MODEM: SEND 20|AT+SQNSSENDEXT=1,52
+[09/09/24 23:38:56] MODEM: RECV 4 |
+> 258.209 000142E241C5C2DD01026F66DF8710013701E00000280A009C58020C48AB000000000102001200070018000F00BE0001000800F0
+[09/09/24 23:38:56] MODEM: SEND 52|
+[09/09/24 23:38:57] MODEM: RECV 6 |
+OK
+[09/09/24 23:38:57] MODEM: RECV 23 |
++SQNSRING: 1,2,2A02
+259.241 cell >>
++SQNSRING: 1,2,2A02
+259.245 found socket 1 and readbytes 2
+[09/09/24 23:38:57] MODEM: SEND 17|AT+SQNSRECV=1,2
+259.257 cell << AT+SQNSRECV=1,2
+[09/09/24 23:38:58] MODEM: RECV 30 |
++SQNSRECV: 1,2
+2A02
+OK
+259.768 cell >>
++SQNSRECV: 1,2
+2A02
+OK
+259.773 found pos 16 with len 2
+259.776 -2A- 0 42
+259.778 -02- 1 2
+259.780 loc ack [Disconnect]
+259.783 heartbeat server ack
+260.023 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  flash len 369

@@ -3,6 +3,7 @@
 import serial
 import serial.tools.list_ports
 import json
+import keyboard
 
 def load_json_settings() -> json:
     """Returns the data from the json file for later use"""
@@ -58,6 +59,9 @@ def read_loop(ser_obj: serial.Serial) -> None:
     """Loops the read function"""
     while True:
         read_from_serial(ser_obj)
+        if keyboard.is_pressed('q'):
+            print("\nDone reading.")
+            break
 
 def send_command(ser_obj: serial.Serial, command: str) -> None:
     """Sends the command to the device."""
@@ -96,7 +100,7 @@ def main():
                             settings['settings']['port_settings']['timeout'])
     
     # Send the settings command
-    send_command(ser_obj, "set,1,60")
+    # send_command(ser_obj, "set,1,60")
     
     # Start reading
     read_loop(ser_obj)
