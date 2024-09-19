@@ -3,7 +3,13 @@
 import serial
 import serial.tools.list_ports
 import json
-import keyboard
+import time
+import clean_logs
+import threading
+
+# Variables
+read_loop_bool = True
+read_inputs_bool = True
 
 def load_json_settings() -> json:
     """Returns the data from the json file for later use"""
@@ -56,12 +62,9 @@ def read_from_serial(ser_obj: serial.Serial) -> None:
             file.write(f"{line}\n")
 
 def read_loop(ser_obj: serial.Serial) -> None:
-    """Loops the read function"""
-    while True:
+    """Loops the read function if boolean is true"""
+    while read_loop_bool:
         read_from_serial(ser_obj)
-        if keyboard.is_pressed('q'):
-            print("\nDone reading.")
-            break
 
 def send_command(ser_obj: serial.Serial, command: str) -> None:
     """Sends the command to the device."""
@@ -74,7 +77,8 @@ def send_command(ser_obj: serial.Serial, command: str) -> None:
 def check_message_do_action(message: str, target: str, func: callable, *args, **kwargs) -> None:
     """Checks message and performs a function if necessary."""
     if message == target:
-        print("Target Message Found")
+        print(f"Target Message Found, Sending Command in 2 seconds")
+        time.sleep(2)
         func(*args, **kwargs)
 
 def ask_for_commands() -> list[str, str]:
@@ -91,6 +95,14 @@ def ask_for_commands() -> list[str, str]:
     
     return target_and_commands
 
+def read_for_inputs(ser_obj) -> None:
+    """User can type commands and send them to the device."""
+    while True:
+        command = input().strip()
+        if command == "quit":
+            read_inputs_bool = False
+        send_command(ser_obj, command)
+
 def main():
     # Get serial connection
     list_serial_ports()
@@ -103,7 +115,14 @@ def main():
     # send_command(ser_obj, "set,1,60")
     
     # Start reading
-    read_loop(ser_obj)
+    read_thread = threading.Thread(target=read_loop, args=(ser_obj,))
+    read_thread.start()
+
+    write_thread = threading.Thread(target=read_for_inputs, args=(ser_obj,))
+    write_thread.start()
+
+    # Ask for logs cleaning
+
 
 if __name__ == "__main__":
     settings = load_json_settings()

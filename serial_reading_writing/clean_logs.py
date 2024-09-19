@@ -72,4 +72,5 @@ def main() -> None:
         check_target_message(input("Enter the target message: "))
 
 if __name__ == "__main__":
-    main()
+    # main()
+    pass

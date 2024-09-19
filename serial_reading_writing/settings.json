@@ -6,7 +6,7 @@
         }
     },
     "commands":{
-        "target": "None",
-        "command": "settings"
+        "target": ">> MAIN APP <<",
+        "command": "None"
     }
 }

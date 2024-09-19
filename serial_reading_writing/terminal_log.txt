@@ -2009,3 +2009,1056 @@ OK
 259.780 loc ack [Disconnect]
 259.783 heartbeat server ack
 260.023 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  flash len 369
+system clock 32 MHz
+system startup ... ...
+Copyright (c) 2023 Positioning Universal Inc.
+VERSION: GG100 MAIN MCU V1.0(Sep 10 2024 19:05:48)
+Reset Reason Register : c000000
+Current device state is :  
+RTC Date and Time : [01/01/00 00:00:00]
+0.208 ERR:consts apn, dman server ip/port not stored in flash
+0.214 +++++++++++++++++++++setting init  ver ffffffff len ffffffff date -1
+0.221 Loading Default Settings
+0.224 settings load failed or backdoor activated, using defaults
+0.230 REG_LOAD_DEFAULT: 0
+0.232 useDefault: 0
+0.234 Settings_version: ffffffff
+0.478 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  flash len 369
+0.484 Next state is 8
+0.686 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> switch released, switch State = 1
+0.692 System wakeup: bootup count = 1, switch status = 0, mems interrupt 0
+0.899 ++++++++++++++++++++state change: Heartbeat Shutdown -> Shipping
+0.905 cell shutdown
+0.907 ------------------cell change state: power off
+0.912 go shutdown
+0.914 gps shutdown
+0.916 Switch Released before 5 Seconds, going back to shipping
+Waking-up on normal state (using Settings #2): NETWORK_MAX_TIMEOUT 60000
+0.929
+[01/01/00 00:00:00] Argument_System_startShutdown : 61200
+0.936 current time  mon=1 day=1 hour=0 minute=0
+0.941 system shutdown state=Shipping
+1.144 has switch shutdown 0
+1.146 turn off LTE Shipping 0
+1.149 system will wakeup when switch is pressed
+1.157 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  flash save
+1.163 system goodbye!
+system clock 32 MHz
+system startup ... ...
+Copyright (c) 2023 Positioning Universal Inc.
+VERSION: GG100 MAIN MCU V1.0(Sep 10 2024 19:05:48)
+Reset Reason Register : c000000
+Current device state is :  
+RTC Date and Time : [01/01/00 00:00:04]
+0.036 ERR:consts apn, dman server ip/port not stored in flash
+0.042 +++++++++++++++++++++setting init  ver c0d0e0f len 171 date 0
+0.049 Next state is 9
+0.251 System wakeup: bootup count = 2, switch status = 1, mems interrupt 0
+5.258 Switch pressed for 5 Seconds, going to Disconnect alert
+5.263
+gps,shutdown
+>> MAIN APP <<
+5.266 Wakeup from shipping state
+5.269 First time Boot
+5.511 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  flash len 369
+5.517 ++++++++++++++++++++state change: Shipping -> Disconnect Alert Get Fix
+5.524 cell shutdown
+5.526 ------------------cell change state: power off
+5.531 go shutdown
+5.533 gps wake
+5.535 VBOOST is enabled!!!
+5.538 GPS power up!!!
+5.640 gps wake
+5.641 VBOOST is enabled!!!
+5.644 GPS power up!!!
+Buf = $CCMSG,GSV,1,0 | Length = 14
+Buf = $CCMSG,VTG,1,1 | Length = 14
+Buf = $CCCFG,1 | Length = 8
+Waking-up from shipping state or 4 times of registration failure: NETWORK_MAX_TIMEOUT 300000
+8.834 gps sats=0, hac= 999
+10.358 gps sats=0, hac= 999
+20.072 gps sats=0, hac= 999
+30.285 gps sats=0, hac= 999
+system clock 32 MHz
+system startup ... ...
+Copyright (c) 2023 Positioning Universal Inc.
+VERSION: GG100 MAIN MCU V1.0(Sep 10 2024 19:05:48)
+Reset Reason Register : c000000
+Current device state is :  
+RTC Date and Time : [01/01/00 00:00:00]
+0.207 ERR:consts apn, dman server ip/port not stored in flash
+0.213 +++++++++++++++++++++setting init  ver c0d0e0f len 171 date 0
+0.220 Next state is 0
+0.422 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> switch released, switch State = 1
+0.428 System wakeup: bootup count = 2, switch status = 0, mems interrupt 0
+0.435 ++++++++++++++++++++state change: Factory -> Shipping
+0.441 cell shutdown
+0.443 ------------------cell change state: power off
+0.448 go shutdown
+0.450 gps shutdown
+0.651 Switch Released before 5 Seconds, going back to shipping
+Waking-up on normal state (using Settings #2): NETWORK_MAX_TIMEOUT 60000
+0.664
+[01/01/00 00:00:00] Argument_System_startShutdown : 61200
+0.671 current time  mon=1 day=1 hour=0 minute=0
+0.675 system shutdown state=Shipping
+0.879 has switch shutdown 0
+0.881 turn off LTE Shipping 0
+0.884 system will wakeup when switch is pressed
+0.892 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  flash save
+0.898 system goodbye!
+system clock 32 MHz
+system startup ... ...
+Copyright (c) 2023 Positioning Universal Inc.
+VERSION: GG100 MAIN MCU V1.0(Sep 10 2024 19:05:48)
+Reset Reason Register : c000000
+Current device state is :  
+RTC Date and Time : [01/01/00 00:00:04]
+0.036 ERR:consts apn, dman server ip/port not stored in flash
+0.042 +++++++++++++++++++++setting init  ver c0d0e0f len 171 date 0
+0.049 Next state is 9
+0.251 System wakeup: bootup count = 3, switch status = 1, mems interrupt 0
+5.258 Switch pressed for 5 Seconds, going to Disconnect alert
+5.263
+gps,shutdown
+>> MAIN APP <<
+5.266 Wakeup from shipping state
+5.269 First time Boot
+5.511 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  flash len 369
+5.517 ++++++++++++++++++++state change: Shipping -> Disconnect Alert Get Fix
+5.524 cell shutdown
+5.526 ------------------cell change state: power off
+5.531 go shutdown
+5.533 gps wake
+5.535 VBOOST is enabled!!!
+5.537 GPS power up!!!
+5.640 gps wake
+5.641 VBOOST is enabled!!!
+5.644 GPS power up!!!
+Buf = $CCMSG,GSV,1,0 | Length = 14
+Buf = $CCMSG,VTG,1,1 | Length = 14
+Buf = $CCCFG,1 | Length = 8
+Waking-up from shipping state or 4 times of registration failure: NETWORK_MAX_TIMEOUT 300000
+8.834 gps sats=0, hac= 999
+9.337 cmd Recieved:: gps,shutdown
+9.341 gps shutdown
+[01/01/00 00:04:25] MODEM: SEND 8|AT+CSQ
+261.237 cell << AT+CSQ
+[01/01/00 00:04:25] MODEM: RECV 21 |
++CSQ: 31,99
+OK
+261.747 cell >>
++CSQ: 31,99
+OK
+261.751 cell rssi=-51
+[01/01/00 00:04:25] MODEM: SEND 12|AT+CEREG=2
+261.760 cell << AT+CEREG=2
+[01/01/00 00:04:26] MODEM: RECV 6 |
+OK
+262.269 cell >> OK
+[01/01/00 00:04:26] MODEM: SEND 11|AT+CEREG?
+262.278 cell << AT+CEREG?
+[01/01/00 00:04:26] MODEM: RECV 41 |
++CEREG: 2,5,"830A","04BB2311",7
+OK
+262.790 cell >>
++CEREG: 2,5,"830A","04BB2311",7
+OK
+262.813 cell comm avail=yes
+[01/01/00 00:04:26] MODEM: SEND 10|AT+CCLK?
+262.823 cell << AT+CCLK?
+[01/01/00 00:04:27] MODEM: RECV 39 |
++CCLK: "24/09/18,13:17:12-28"
+OK
+263.335 cell >>
++CCLK: "24/09/18,13:17:12-28"
+OK
+263.341 Valid Modem time, Updating RTC
+[09/18/24 20:17:12] RTC: Cycle(0)
+[09/18/24 20:17:12] MODEM: SEND 12|AT+CGATT=1
+263.357 cell << AT+CGATT=1
+[09/18/24 20:17:12] MODEM: RECV 6 |
+OK
+263.866 cell >> OK
+[09/18/24 20:17:12] MODEM: SEND 11|AT+CGACT?
+263.875 cell << AT+CGACT?
+[09/18/24 20:17:13] MODEM: RECV 21 |
++CGACT: 1,1
+OK
+264.385 cell >>
++CGACT: 1,1
+OK
+264.390 ------------------cell change state: setup socket
+[09/18/24 20:17:13] MODEM: SEND 12|AT+SQNGUTI
+264.901 cell << AT+SQNGUTI
+[09/18/24 20:17:14] MODEM: RECV 33 |
+310410,FF50,18,DCC1BEA3
+OK
+265.412 cell >>
+310410,FF50,18,DCC1BEA3
+OK
+[09/18/24 20:17:14] MODEM: SEND 12|AT+SQNSH=1
+265.424 cell << AT+SQNSH=1
+[09/18/24 20:17:14] MODEM: RECV 6 |
+OK
+265.933 cell >> OK
+[09/18/24 20:17:14] MODEM: SEND 30|AT+SQNSCFG=1,1,1500,0,600,50
+265.945 cell << AT+SQNSCFG=1,1,1500,0,600,50
+[09/18/24 20:17:15] MODEM: RECV 6 |
+OK
+266.456 cell >> OK
+[09/18/24 20:17:15] MODEM: SEND 23|AT+SQNSCFGEXT=1,2,1,5
+266.467 cell << AT+SQNSCFGEXT=1,2,1,5
+[09/18/24 20:17:15] MODEM: RECV 6 |
+OK
+266.977 cell >> OK
+[09/18/24 20:17:15] MODEM: SEND 44|AT+SQNSD=1,1,50010,"52.37.248.117",0,198,1
+266.992 cell << AT+SQNSD=1,1,50010,"52.37.248.117",0,198,1
+[09/18/24 20:17:16] MODEM: RECV 6 |
+OK
+267.503 cell >> OK
+267.505 ------------------cell change state: send packets
+267.511 LOC_DISCONNECT_ALERT generated
+267.515 loc add: [Disconnect] - 1970/01/01 00:00:00 0 0 s0/0 0k 0* 0mV 0dbm
+267.522 addTowerLoc
+268.024 addTowerLoc
+268.026 loc send: [Disconnect], packet remain = 1, len = 44
+[09/18/24 20:17:16] MODEM: SEND 20|AT+SQNSSENDEXT=1,52
+[09/18/24 20:17:16] MODEM: RECV 4 |
+> 268.045 000142E2424F755001026F66EB354C0136019A0000830A04BB23110C24CD00000000010C00000000FF9C000F00030001000000F0
+[09/18/24 20:17:16] MODEM: SEND 52|
+[09/18/24 20:17:17] MODEM: RECV 6 |
+OK
+283.071 loc retry: [Disconnect], Retry Count: 1
+283.075 Location Server Ack waiting time: 15 seconds
+[09/18/24 20:17:31] MODEM: SEND 20|AT+SQNSSENDEXT=1,52
+[09/18/24 20:17:31] MODEM: RECV 4 |
+> 283.094 000142E2424F755001026F66EB354C0136019A0000830A04BB23110C24CD00000000010C00000000FF9C000F00030001000000F0
+[09/18/24 20:17:31] MODEM: SEND 52|
+[09/18/24 20:17:32] MODEM: RECV 6 |
+OK
+298.120 loc retry: [Disconnect], Retry Count: 2
+298.124 Location Server Ack waiting time: 15 seconds
+[09/18/24 20:17:46] MODEM: SEND 20|AT+SQNSSENDEXT=1,52
+[09/18/24 20:17:46] MODEM: RECV 4 |
+> 298.143 000142E2424F755001026F66EB354C0136019A0000830A04BB23110C24CD00000000010C00000000FF9C000F00030001000000F0
+[09/18/24 20:17:46] MODEM: SEND 52|
+[09/18/24 20:17:47] MODEM: RECV 6 |
+OK
+313.169 loc retry: [Disconnect], Retry Count: 3
+313.173 Location Server Ack waiting time: 15 seconds
+313.178 retried 3 times, give up this packet
+system clock 32 MHz
+system startup ... ...
+Copyright (c) 2023 Positioning Universal Inc.
+VERSION: GG100 MAIN MCU V1.0(Sep 10 2024 19:05:48)
+Reset Reason Register : c000000
+Current device state is :  
+RTC Date and Time : [01/01/00 00:00:00]
+0.207 ERR:consts apn, dman server ip/port not stored in flash
+0.213 +++++++++++++++++++++setting init  ver c0d0e0f len 171 date 1726773777
+0.221 Next state is 0
+0.423 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> switch released, switch State = 1
+0.429 System wakeup: bootup count = 54, switch status = 0, mems interrupt 0
+0.436 ++++++++++++++++++++state change: Factory -> Shipping
+0.442 cell shutdown
+0.444 ------------------cell change state: power off
+0.449 go shutdown
+0.451 gps shutdown
+0.653 Switch Released before 5 Seconds, going back to shipping
+Waking-up on normal state (using Settings #2): NETWORK_MAX_TIMEOUT 60000
+0.666
+[01/01/00 00:00:00] Argument_System_startShutdown : 61200
+0.673 current time  mon=1 day=1 hour=0 minute=0
+0.677 system shutdown state=Shipping
+0.881 has switch shutdown 0
+0.883 turn off LTE Shipping 0
+0.886 system will wakeup when switch is pressed
+0.896 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  flash save
+0.902 system goodbye!
+system clock 32 MHz
+system startup ... ...
+Copyright (c) 2023 Positioning Universal Inc.
+VERSION: GG100 MAIN MCU V1.0(Sep 10 2024 19:05:48)
+Reset Reason Register : c000000
+Current device state is :  
+RTC Date and Time : [01/01/00 00:00:00]
+0.207 ERR:consts apn, dman server ip/port not stored in flash
+0.213 +++++++++++++++++++++setting init  ver c0d0e0f len 171 date 1726773777
+0.221 Next state is 0
+0.423 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> switch released, switch State = 1
+0.429 System wakeup: bootup count = 56, switch status = 0, mems interrupt 0
+0.436 ++++++++++++++++++++state change: Factory -> Shipping
+0.442 cell shutdown
+0.444 ------------------cell change state: power off
+0.449 go shutdown
+0.451 gps shutdown
+0.653 Switch Released before 5 Seconds, going back to shipping
+Waking-up on normal state (using Settings #2): NETWORK_MAX_TIMEOUT 60000
+0.666
+[01/01/00 00:00:00] Argument_System_startShutdown : 61200
+0.673 current time  mon=1 day=1 hour=0 minute=0
+0.677 system shutdown state=Shipping
+0.881 has switch shutdown 0
+0.883 turn off LTE Shipping 0
+0.886 system will wakeup when switch is pressed
+0.896 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  flash save
+0.902 system goodbye!
+system clock 32 MHz
+system startup ... ...
+Copyright (c) 2023 Positioning Universal Inc.
+VERSION: GG100 MAIN MCU V1.0(Sep 10 2024 19:05:48)
+Reset Reason Register : c000000
+Current device state is :  
+RTC Date and Time : [01/01/00 00:00:54]
+0.068 ERR:consts apn, dman server ip/port not stored in flash
+0.074 +++++++++++++++++++++setting init  ver c0d0e0f len 171 date 1726773777
+0.082 Next state is 9
+0.284 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> switch released, switch State = 1
+0.290 System wakeup: bootup count = 57, switch status = 0, mems interrupt 0
+0.497 Switch Released before 5 Seconds, going back to shipping
+Waking-up on normal state (using Settings #2): NETWORK_MAX_TIMEOUT 60000
+0.510
+[01/01/00 00:00:54] Argument_System_startShutdown : 61200
+0.517 current time  mon=1 day=1 hour=0 minute=0
+0.521 system shutdown state=Shipping
+0.725 has switch shutdown 0
+0.727 turn off LTE Shipping 0
+0.730 system will wakeup when switch is pressed
+0.740 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  flash save
+0.746 system goodbye!
+0.740 has switch shutdown 0
+0.742 turn off LTE Shipping 0
+0.745 system will wakeup when switch is pressed
+0.755 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  flash save
+0.761 system goodbye!
+system clock 32 MHz
+system startup ... ...
+Copyright (c) 2023 Positioning Universal Inc.
+VERSION: GG100 MAIN MCU V1.0(Sep 10 2024 19:05:48)
+Reset Reason Register : c000000
+Current device state is :  
+RTC Date and Time : [01/01/00 00:00:00]
+0.208 ERR:consts apn, dman server ip/port not stored in flash
+0.214 +++++++++++++++++++++setting init  ver c0d0e0f len 171 date 0
+0.221 Next state is 0
+0.423 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> switch released, switch State = 1
+0.429 System wakeup: bootup count = 62, switch status = 0, mems interrupt 0
+0.436 ++++++++++++++++++++state change: Factory -> Shipping
+0.442 cell shutdown
+0.444 ------------------cell change state: power off
+0.449 go shutdown
+0.451 gps shutdown
+0.653 Switch Released before 5 Seconds, going back to shipping
+Waking-up on normal state (using Settings #2): NETWORK_MAX_TIMEOUT 60000
+0.666
+[01/01/00 00:00:00] Argument_System_startShutdown : 61200
+0.673 current time  mon=1 day=1 hour=0 minute=0
+0.677 system shutdown state=Shipping
+0.881 has switch shutdown 0
+0.883 turn off LTE Shipping 0
+0.886 system will wakeup when switch is pressed
+0.896 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  flash save
+0.902 system goodbye!
+system clock 32 MHz
+system startup ... ...
+Copyright (c) 2023 Positioning Universal Inc.
+VERSION: GG100 MAIN MCU V1.0(Sep 10 2024 19:05:48)
+Reset Reason Register : c000000
+Current device state is :  
+RTC Date and Time : [01/01/00 00:00:05]
+0.036 ERR:consts apn, dman server ip/port not stored in flash
+0.042 +++++++++++++++++++++setting init  ver c0d0e0f len 171 date 0
+0.049 Next state is 9
+0.251 System wakeup: bootup count = 63, switch status = 1, mems interrupt 0
+5.258 Switch pressed for 5 Seconds, going to Disconnect alert
+5.263
+gps,shutdown
+>> MAIN APP <<
+5.266 Wakeup from shipping state
+5.269 First time Boot
+5.511 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  flash len 369
+5.517 ++++++++++++++++++++state change: Shipping -> Disconnect Alert Get Fix
+5.524 cell shutdown
+5.526 ------------------cell change state: power off
+5.531 go shutdown
+5.533 gps wake
+5.535 VBOOST is enabled!!!
+5.538 GPS power up!!!
+5.640 gps wake
+5.641 VBOOST is enabled!!!
+5.644 GPS power up!!!
+Buf = $CCMSG,GSV,1,0 | Length = 14
+Buf = $CCMSG,VTG,1,1 | Length = 14
+Buf = $CCCFG,1 | Length = 8
+Waking-up from shipping state or 4 times of registration failure: NETWORK_MAX_TIMEOUT 300000
+8.834 gps sats=0, hac= 999
+9.337 cmd Recieved:: gps,shutdown
+9.341 gps shutdown
+110.004 gps sats=0, hac= 999
+120.217 gps sats=0, hac= 999
+122.783 state leave heartbeat get fix on timeout
+122.788 ++++++++++++++++++++state change: Heartbeat Get GPS -> Hearbeat Report
+122.795 gps shutdown
+122.797 cell wake rx = 0, D2H = 0
+122.801 VBOOST is enabled!!!
+122.905 LTE Baseband power up!!!
+122.908 1)NOTICE: CellHandler_state = power off
+122.912 ------------------cell change state: wait for sim
+122.918 LTE wake up!!!
+123.049 RX is up!!!
+127.052 D2H still low!!!
+127.054 HIFC over
+[09/19/24 20:12:08] MODEM: RECV 15 |
+[09/19/24 20:12:08] MODEM: SEND 11|AT+CFUN=1
+127.568 cell << AT+CFUN=1
+[09/19/24 20:12:09] MODEM: RECV 6 |
+OK
+128.077 cell >> OK
+[09/19/24 20:12:09] MODEM: SEND 12|AT+SQNCCID
+128.086 cell << AT+SQNCCID
+[09/19/24 20:12:09] MODEM: RECV 57 |
++SQNCCID: "8912230102273453062",""
+OK
++CEREG: 2
+128.600 cell >>
++SQNCCID: "8912230102273453062",""
+OK
++CEREG: 2
+[09/19/24 20:12:09] MODEM: SEND 14|AT+SQNSIMST?
+128.634 cell << AT+SQNSIMST?
+[09/19/24 20:12:10] MODEM: RECV 24 |
++SQNSIMST: 0,5
+OK
+129.145 cell >>
++SQNSIMST: 0,5
+OK
+129.149 cell sim ready
+[09/19/24 20:12:10] MODEM: SEND 11|AT+CGSN=1
+129.158 cell << AT+CGSN=1
+[09/19/24 20:12:10] MODEM: RECV 34 |
++CGSN: "355014519256400"
+OK
+129.669 cell >>
++CGSN: "355014519256400"
+OK
+129.674 imei buf : 355014519256400
+[09/19/24 20:12:10] MODEM: SEND 14|AT+SQNTMON=1
+129.706 cell << AT+SQNTMON=1
+[09/19/24 20:12:12] MODEM: RECV 47 |
++SQNTMON: 1,0,23
+OK
++SQNTMONS: 1,0,23
+131.219 cell >>
++SQNTMON: 1,0,23
+OK
++SQNTMONS: 1,0,23
+system clock 32 MHz
+system startup ... ...
+Copyright (c) 2023 Positioning Universal Inc.
+VERSION: GG100 MAIN MCU V1.0(Sep 10 2024 19:05:48)
+Reset Reason Register : c000000
+Current device state is :  
+RTC Date and Time : [01/01/00 00:00:00]
+0.207 ERR:consts apn, dman server ip/port not stored in flash
+0.213 +++++++++++++++++++++setting init  ver c0d0e0f len 171 date 1726776536
+0.221 Next state is 0
+0.423 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> switch released, switch State = 1
+0.429 System wakeup: bootup count = 66, switch status = 0, mems interrupt 0
+0.436 ++++++++++++++++++++state change: Factory -> Shipping
+0.442 cell shutdown
+0.444 ------------------cell change state: power off
+0.449 go shutdown
+0.451 gps shutdown
+0.453
+gps,shutdown
+>> MAIN APP <<
+0.455 Wakeup from shipping state
+0.458 First time Boot
+0.700 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  flash len 369
+0.706 ++++++++++++++++++++state change: Shipping -> Disconnect Alert Get Fix
+0.714 cell shutdown
+0.716 ------------------cell change state: power off
+0.721 go shutdown
+0.722 gps wake
+0.724 VBOOST is enabled!!!
+0.727 GPS power up!!!
+0.829 gps wake
+0.830 VBOOST is enabled!!!
+0.833 GPS power up!!!
+Waking-up from shipping state or 4 times of registration failure: NETWORK_MAX_TIMEOUT 300000
+0.944 gps sats=0, hac= 0
+2.471 cmd Recieved:: gps,shutdown
+2.475 gps shutdown
+system clock 32 MHz
+system startup ... ...
+Copyright (c) 2023 Positioning Universal Inc.
+VERSION: GG100 MAIN MCU V1.0(Sep 10 2024 19:05:48)
+Reset Reason Register : c000000
+Current device state is :  
+RTC Date and Time : [01/01/00 00:00:23]
+0.068 ERR:consts apn, dman server ip/port not stored in flash
+0.073 +++++++++++++++++++++setting init  ver c0d0e0f len 171 date 0
+0.080 Next state is 10
+0.283 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> switch released, switch State = 1
+0.289 System wakeup: bootup count = 66, switch status = 0, mems interrupt 0
+2.496 Switch released > 2 sec, wakeup
+2.499
+None
+>> MAIN APP <<
+2.501 ++++++++++++++++++++state change: Disconnect Alert Get Fix -> Heartbeat Get GPS
+2.509 cell shutdown
+2.511 ------------------cell change state: power off
+2.516 go shutdown
+2.518 gps wake
+2.520 VBOOST is enabled!!!
+2.523 GPS power up!!!
+2.625 gps wake
+2.626 VBOOST is enabled!!!
+2.629 GPS power up!!!
+Buf = $CCMSG,GSV,1,0 | Length = 14
+Buf = $CCMSG,VTG,1,1 | Length = 14
+Buf = $CCCFG,1 | Length = 8
+settings
+Waking-up on normal state (using Settings #2): NETWORK_MAX_TIMEOUT 60000
+5.818 gps sats=0, hac= 999
+6.320 cmd Recieved:: None
+6.323 Unknown cmd: None
+settings
+9.889 cmd Recieved:: settings
+9.892 -Flags (Internal use only, Not a part of the setttings.-----
+9.899 0: SETTING_UPDATE_FLAG = 0
+9.902 -Settings------------------------------------
+9.907 1: HEARTBEAT_INTERVAL = 60
+9.910 2: NETWORK_MAX_TIMEOUT = 60000
+9.913 3: NETWORK_RETRY_INTERVAL = 15000
+9.917 4: COMM_RESET_HEARTBEAT_COUNT = 24
+9.921 5: TEMPERATURE_THRESHOLD_HIGH = 60
+9.925 6: TEMPERATURE_THERESHOLD_LOW = -35
+9.929 7: UPDATE_SETTING_INTERVAL = 604800
+9.933 8: NGP_VERSION = 202182159
+9.936 9: GPS_FIX_MAX_TIMEOUT = 120000
+9.940 10: MIN_SATS = 4
+9.942 11: MAX_HAC = 40
+9.945 12: TRACK_MOVE_INTERVAL = 300
+9.948 13: TRACK_STOP_INTERVAL = 61200
+9.952 14: TRACK_SHUTDOWN_ODR = 2
+9.955 15: TRACK_SHUTDOWN_THRESHOLD = 3
+9.959 16: TRACK_SHUTDOWN_SCALE = 0
+9.962 17: TRACK_SHUTDOWN_DURATION = 2
+9.966 18: TRACK_WAKEUP_ODR = 2
+9.969 19: TRACK_WAKEUP_SCALE = 0
+9.972 20: TRACK_WAKEUP_THRESHOLD = 3
+9.976 21: TRACK_WAKEUP_DURATION = 2
+9.979 22: UPDATE_MAX_TIMEOUT = 40000
+9.983 23: UPDATE_RETRY_INTERVAL = 15000
+9.987 24: NETWORK_REPORT_SERVER = 52.37.248.117
+9.991 25: NETWORK_REPORT_PORT = 50010
+9.995 26: DMAN_IP_ADDR = 52.10.226.61
+9.998 27: DMAN_PORT = 51010
+10.001 28: APN = m2m.telus.iot
+10.004  29: UUID0 = 0x10203
+10.007  30: UUID1 = 0x4050607
+10.010  31: UUID2 = 0x8090a0b
+10.013  32: UUID3 = 0xc0d0e0f
+10.016 33: DISCOVERY_COUNT_MAX = 0
+10.019 34: FAST_HEARTBEAT_INTERVAL = 120
+10.023 35: NUMBER_GPS_MSGS = 5
+10.026 36: BATTERY_VOLTAGE_GOAL = 3600
+10.030 37: BATTERY_VOLTAGE_HYSTERESIS = 100
+10.034 38: BATTERY_MAJOR_CYCLE_SLEEP = 61200
+10.039 39: BATTERY_MAJOR_CYCLE_SLEEPX = 10
+10.043 40: BATTERY_CYCLE_LENGTH = 20000
+10.046 41: BATTERY_CYCLE_REST_LENGTH = 90000
+10.051 42: BATTERY_MAX_REFRESH_CYCLES = 2
+10.055 43: BATTERY_MAX_TOTAL_CYCLES = 75
+10.059 44: DEALERSHIP_MOVE_INTERVAL = 60
+10.063 45: DEALERSHIP_STOP_INTERVAL = 61200
+10.067 46: DEALERSHIP_SHUTDOWN_ODR = 2
+10.071 47: DEALERSHIP_SHUTDOWN_THRESHOLD = 3
+10.075 48: DEALERSHIP_SHUTDOWN_SCALE = 0
+10.079 49: DEALERSHIP_SHUTDOWN_DURATION = 2
+10.083 50: DEALERSHIP_WAKEUP_ODR = 2
+10.087 51: DEALERSHIP_WAKEUP_SCALE = 0
+10.090 52: DEALERSHIP_WAKEUP_THRESHOLD = 3
+10.094 53: DEALERSHIP_WAKEUP_DURATION = 2
+10.098 54: DEALERSHIP_ON_FLAG = 0
+10.102 55: RECOVERY_ON_FLAG = 0
+10.105 56: CONSUMER_ON_FLAG = 1
+10.108 57: TRIP_START_VIBRATION_DEBOUNCE = 5
+10.112 58: TRIP_END_VIBRATION_DEBOUNCE = 30
+10.117 59: HEARTBEAT_USE_GPS = 1
+10.120 60: TRIP_START_USE_GPS = 0
+10.123 61: TRIP_END_USE_GPS = 1
+10.126 62: MOVE_USE_GPS = 1
+10.129 63: STOP_USE_GPS = 1
+10.132 64: MOVE_DEALERSHIP_USE_GPS = 0
+10.135 65: SERVER_SIDE_FLAG = 1
+10.139 66: AT_CMD_RETRY_MAX = 20
+10.142 67: VIBRATION_SLEEP_FLAG = 0
+10.145 68: TRIP_STARTED_FLAG = 0
+10.148 -End of Settings-----------------------------
+10.176 gps sats=0, hac= 999
+settings
+13.741 cmd Recieved:: settings
+13.744 -Flags (Internal use only, Not a part of the setttings.-----
+13.751 0: SETTING_UPDATE_FLAG = 0
+13.754 -Settings------------------------------------
+13.759 1: HEARTBEAT_INTERVAL = 60
+13.762 2: NETWORK_MAX_TIMEOUT = 60000
+13.766 3: NETWORK_RETRY_INTERVAL = 15000
+13.770 4: COMM_RESET_HEARTBEAT_COUNT = 24
+13.774 5: TEMPERATURE_THRESHOLD_HIGH = 60
+13.778 6: TEMPERATURE_THERESHOLD_LOW = -35
+13.782 7: UPDATE_SETTING_INTERVAL = 604800
+13.786 8: NGP_VERSION = 202182159
+13.790 9: GPS_FIX_MAX_TIMEOUT = 120000
+13.793 10: MIN_SATS = 4
+13.796 11: MAX_HAC = 40
+13.798 12: TRACK_MOVE_INTERVAL = 300
+13.802 13: TRACK_STOP_INTERVAL = 61200
+13.805 14: TRACK_SHUTDOWN_ODR = 2
+13.809 15: TRACK_SHUTDOWN_THRESHOLD = 3
+13.813 16: TRACK_SHUTDOWN_SCALE = 0
+13.816 17: TRACK_SHUTDOWN_DURATION = 2
+13.820 18: TRACK_WAKEUP_ODR = 2
+13.823 19: TRACK_WAKEUP_SCALE = 0
+13.826 20: TRACK_WAKEUP_THRESHOLD = 3
+13.830 21: TRACK_WAKEUP_DURATION = 2
+13.833 22: UPDATE_MAX_TIMEOUT = 40000
+13.837 23: UPDATE_RETRY_INTERVAL = 15000
+13.841 24: NETWORK_REPORT_SERVER = 52.37.248.117
+13.846 25: NETWORK_REPORT_PORT = 50010
+13.849 26: DMAN_IP_ADDR = 52.10.226.61
+13.853 27: DMAN_PORT = 51010
+13.856 28: APN = m2m.telus.iot
+13.859  29: UUID0 = 0x10203
+13.862  30: UUID1 = 0x4050607
+13.865  31: UUID2 = 0x8090a0b
+13.868  32: UUID3 = 0xc0d0e0f
+13.871 33: DISCOVERY_COUNT_MAX = 0
+13.874 34: FAST_HEARTBEAT_INTERVAL = 120
+13.878 35: NUMBER_GPS_MSGS = 5
+13.881 36: BATTERY_VOLTAGE_GOAL = 3600
+13.885 37: BATTERY_VOLTAGE_HYSTERESIS = 100
+13.889 38: BATTERY_MAJOR_CYCLE_SLEEP = 61200
+13.893 39: BATTERY_MAJOR_CYCLE_SLEEPX = 10
+13.897 40: BATTERY_CYCLE_LENGTH = 20000
+13.901 41: BATTERY_CYCLE_REST_LENGTH = 90000
+13.906 42: BATTERY_MAX_REFRESH_CYCLES = 2
+13.910 43: BATTERY_MAX_TOTAL_CYCLES = 75
+13.914 44: DEALERSHIP_MOVE_INTERVAL = 60
+13.917 45: DEALERSHIP_STOP_INTERVAL = 61200
+13.922 46: DEALERSHIP_SHUTDOWN_ODR = 2
+13.925 47: DEALERSHIP_SHUTDOWN_THRESHOLD = 3
+13.930 48: DEALERSHIP_SHUTDOWN_SCALE = 0
+13.934 49: DEALERSHIP_SHUTDOWN_DURATION = 2
+13.938 50: DEALERSHIP_WAKEUP_ODR = 2
+13.941 51: DEALERSHIP_WAKEUP_SCALE = 0
+13.945 52: DEALERSHIP_WAKEUP_THRESHOLD = 3
+13.949 53: DEALERSHIP_WAKEUP_DURATION = 2
+13.953 54: DEALERSHIP_ON_FLAG = 0
+13.957 55: RECOVERY_ON_FLAG = 0
+13.960 56: CONSUMER_ON_FLAG = 1
+13.963 57: TRIP_START_VIBRATION_DEBOUNCE = 5
+13.967 58: TRIP_END_VIBRATION_DEBOUNCE = 30
+13.971 59: HEARTBEAT_USE_GPS = 1
+13.975 60: TRIP_START_USE_GPS = 0
+13.978 61: TRIP_END_USE_GPS = 1
+13.981 62: MOVE_USE_GPS = 1
+13.984 63: STOP_USE_GPS = 1
+13.986 64: MOVE_DEALERSHIP_USE_GPS = 0
+13.990 65: SERVER_SIDE_FLAG = 1
+13.993 66: AT_CMD_RETRY_MAX = 20
+13.997 67: VIBRATION_SLEEP_FLAG = 0
+14.000 68: TRIP_STARTED_FLAG = 0
+14.003 -End of Settings-----------------------------
+system clock 32 MHz
+system startup ... ...
+Copyright (c) 2023 Positioning Universal Inc.
+VERSION: GG100 MAIN MCU V1.0(Sep 10 2024 19:05:48)
+Reset Reason Register : c000000
+Current device state is :  
+RTC Date and Time : [01/01/00 00:03:53]
+0.036 ERR:consts apn, dman server ip/port not stored in flash
+0.042 +++++++++++++++++++++setting init  ver c0d0e0f len 171 date 0
+0.049 Next state is 8
+0.251 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> switch released, switch State = 1
+0.257 System wakeup: bootup count = 67, switch status = 0, mems interrupt 0
+2.464 Switch released > 2 sec, wakeup
+2.467
+40.008 gps sats=0, hac= 999
+system clock 32 MHz
+system startup ... ...
+Copyright (c) 2023 Positioning Universal Inc.
+VERSION: GG100 MAIN MCU V1.0(Sep 10 2024 19:05:48)
+Reset Reason Register : c000000
+Current device state is :  
+RTC Date and Time : [01/01/00 00:04:33]
+0.070 ERR:consts apn, dman server ip/port not stored in flash
+0.076 +++++++++++++++++++++setting init  ver c0d0e0f len 171 date 0
+0.083 Next state is 6
+0.285 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> switch released, switch State = 1
+0.291 System wakeup: bootup count = 67, switch status = 0, mems interrupt 0
+2.498 Switch released > 2 sec, wakeup
+2.501
+None
+>> MAIN APP <<
+2.503 gps wake
+2.505 VBOOST is enabled!!!
+2.508 GPS power up!!!
+Buf = $CCMSG,GSV,1,0 | Length = 14
+Buf = $CCMSG,VTG,1,1 | Length = 14
+Buf = $CCCFG,1 | Length = 8
+Waking-up on normal state (using Settings #2): NETWORK_MAX_TIMEOUT 60000
+5.697 gps sats=0, hac= 999
+settings
+6.199 cmd Recieved:: None
+6.202 Unknown cmd: None
+settings
+8.747 cmd Recieved:: settings
+8.750 -Flags (Internal use only, Not a part of the setttings.-----
+8.757 0: SETTING_UPDATE_FLAG = 0
+8.760 -Settings------------------------------------
+8.765 1: HEARTBEAT_INTERVAL = 60
+8.768 2: NETWORK_MAX_TIMEOUT = 60000
+8.771 3: NETWORK_RETRY_INTERVAL = 15000
+8.775 4: COMM_RESET_HEARTBEAT_COUNT = 24
+8.779 5: TEMPERATURE_THRESHOLD_HIGH = 60
+8.783 6: TEMPERATURE_THERESHOLD_LOW = -35
+8.787 7: UPDATE_SETTING_INTERVAL = 604800
+8.791 8: NGP_VERSION = 202182159
+8.794 9: GPS_FIX_MAX_TIMEOUT = 120000
+8.798 10: MIN_SATS = 4
+8.800 11: MAX_HAC = 40
+8.803 12: TRACK_MOVE_INTERVAL = 300
+8.806 13: TRACK_STOP_INTERVAL = 61200
+8.810 14: TRACK_SHUTDOWN_ODR = 2
+8.813 15: TRACK_SHUTDOWN_THRESHOLD = 3
+8.817 16: TRACK_SHUTDOWN_SCALE = 0
+8.820 17: TRACK_SHUTDOWN_DURATION = 2
+8.824 18: TRACK_WAKEUP_ODR = 2
+8.827 19: TRACK_WAKEUP_SCALE = 0
+8.830 20: TRACK_WAKEUP_THRESHOLD = 3
+8.834 21: TRACK_WAKEUP_DURATION = 2
+8.837 22: UPDATE_MAX_TIMEOUT = 40000
+8.841 23: UPDATE_RETRY_INTERVAL = 15000
+8.845 24: NETWORK_REPORT_SERVER = 52.37.248.117
+8.849 25: NETWORK_REPORT_PORT = 50010
+8.853 26: DMAN_IP_ADDR = 52.10.226.61
+8.856 27: DMAN_PORT = 51010
+8.859 28: APN = m2m.telus.iot
+8.862  29: UUID0 = 0x10203
+8.865  30: UUID1 = 0x4050607
+8.868  31: UUID2 = 0x8090a0b
+8.871  32: UUID3 = 0xc0d0e0f
+8.873 33: DISCOVERY_COUNT_MAX = 0
+8.877 34: FAST_HEARTBEAT_INTERVAL = 120
+8.881 35: NUMBER_GPS_MSGS = 5
+8.884 36: BATTERY_VOLTAGE_GOAL = 3600
+8.887 37: BATTERY_VOLTAGE_HYSTERESIS = 100
+8.891 38: BATTERY_MAJOR_CYCLE_SLEEP = 61200
+8.896 39: BATTERY_MAJOR_CYCLE_SLEEPX = 10
+8.900 40: BATTERY_CYCLE_LENGTH = 20000
+8.903 41: BATTERY_CYCLE_REST_LENGTH = 90000
+8.908 42: BATTERY_MAX_REFRESH_CYCLES = 2
+8.911 43: BATTERY_MAX_TOTAL_CYCLES = 75
+8.915 44: DEALERSHIP_MOVE_INTERVAL = 60
+8.919 45: DEALERSHIP_STOP_INTERVAL = 61200
+8.923 46: DEALERSHIP_SHUTDOWN_ODR = 2
+8.927 47: DEALERSHIP_SHUTDOWN_THRESHOLD = 3
+8.931 48: DEALERSHIP_SHUTDOWN_SCALE = 0
+8.935 49: DEALERSHIP_SHUTDOWN_DURATION = 2
+8.939 50: DEALERSHIP_WAKEUP_ODR = 2
+8.943 51: DEALERSHIP_WAKEUP_SCALE = 0
+8.946 52: DEALERSHIP_WAKEUP_THRESHOLD = 3
+8.950 53: DEALERSHIP_WAKEUP_DURATION = 2
+8.954 54: DEALERSHIP_ON_FLAG = 0
+8.957 55: RECOVERY_ON_FLAG = 0
+8.960 56: CONSUMER_ON_FLAG = 1
+8.963 57: TRIP_START_VIBRATION_DEBOUNCE = 5
+8.968 58: TRIP_END_VIBRATION_DEBOUNCE = 30
+8.972 59: HEARTBEAT_USE_GPS = 1
+8.975 60: TRIP_START_USE_GPS = 0
+8.978 61: TRIP_END_USE_GPS = 1
+8.981 62: MOVE_USE_GPS = 1
+8.984 63: STOP_USE_GPS = 1
+8.986 64: MOVE_DEALERSHIP_USE_GPS = 0
+8.990 65: SERVER_SIDE_FLAG = 1
+8.993 66: AT_CMD_RETRY_MAX = 20
+8.996 67: VIBRATION_SLEEP_FLAG = 0
+9.000 68: TRIP_STARTED_FLAG = 0
+9.003 -End of Settings-----------------------------
+10.050 gps sats=0, hac= 999
+settings
+12.595 cmd Recieved:: settings
+12.598 -Flags (Internal use only, Not a part of the setttings.-----
+12.605 0: SETTING_UPDATE_FLAG = 0
+12.608 -Settings------------------------------------
+12.613 1: HEARTBEAT_INTERVAL = 60
+12.616 2: NETWORK_MAX_TIMEOUT = 60000
+12.620 3: NETWORK_RETRY_INTERVAL = 15000
+12.624 4: COMM_RESET_HEARTBEAT_COUNT = 24
+12.628 5: TEMPERATURE_THRESHOLD_HIGH = 60
+12.632 6: TEMPERATURE_THERESHOLD_LOW = -35
+12.636 7: UPDATE_SETTING_INTERVAL = 604800
+12.640 8: NGP_VERSION = 202182159
+12.644 9: GPS_FIX_MAX_TIMEOUT = 120000
+12.647 10: MIN_SATS = 4
+12.650 11: MAX_HAC = 40
+12.652 12: TRACK_MOVE_INTERVAL = 300
+12.656 13: TRACK_STOP_INTERVAL = 61200
+12.659 14: TRACK_SHUTDOWN_ODR = 2
+12.663 15: TRACK_SHUTDOWN_THRESHOLD = 3
+12.667 16: TRACK_SHUTDOWN_SCALE = 0
+12.670 17: TRACK_SHUTDOWN_DURATION = 2
+12.674 18: TRACK_WAKEUP_ODR = 2
+12.677 19: TRACK_WAKEUP_SCALE = 0
+12.680 20: TRACK_WAKEUP_THRESHOLD = 3
+12.684 21: TRACK_WAKEUP_DURATION = 2
+12.687 22: UPDATE_MAX_TIMEOUT = 40000
+12.691 23: UPDATE_RETRY_INTERVAL = 15000
+12.695 24: NETWORK_REPORT_SERVER = 52.37.248.117
+12.700 25: NETWORK_REPORT_PORT = 50010
+12.703 26: DMAN_IP_ADDR = 52.10.226.61
+12.707 27: DMAN_PORT = 51010
+12.710 28: APN = m2m.telus.iot
+12.713  29: UUID0 = 0x10203
+12.716  30: UUID1 = 0x4050607
+12.719  31: UUID2 = 0x8090a0b
+12.722  32: UUID3 = 0xc0d0e0f
+12.725 33: DISCOVERY_COUNT_MAX = 0
+12.728 34: FAST_HEARTBEAT_INTERVAL = 120
+12.732 35: NUMBER_GPS_MSGS = 5
+12.735 36: BATTERY_VOLTAGE_GOAL = 3600
+12.739 37: BATTERY_VOLTAGE_HYSTERESIS = 100
+12.743 38: BATTERY_MAJOR_CYCLE_SLEEP = 61200
+12.747 39: BATTERY_MAJOR_CYCLE_SLEEPX = 10
+12.751 40: BATTERY_CYCLE_LENGTH = 20000
+12.755 41: BATTERY_CYCLE_REST_LENGTH = 90000
+12.760 42: BATTERY_MAX_REFRESH_CYCLES = 2
+12.764 43: BATTERY_MAX_TOTAL_CYCLES = 75
+12.768 44: DEALERSHIP_MOVE_INTERVAL = 60
+12.771 45: DEALERSHIP_STOP_INTERVAL = 61200
+12.776 46: DEALERSHIP_SHUTDOWN_ODR = 2
+12.779 47: DEALERSHIP_SHUTDOWN_THRESHOLD = 3
+12.784 48: DEALERSHIP_SHUTDOWN_SCALE = 0
+12.788 49: DEALERSHIP_SHUTDOWN_DURATION = 2
+12.792 50: DEALERSHIP_WAKEUP_ODR = 2
+12.795 51: DEALERSHIP_WAKEUP_SCALE = 0
+12.799 52: DEALERSHIP_WAKEUP_THRESHOLD = 3
+12.803 53: DEALERSHIP_WAKEUP_DURATION = 2
+12.807 54: DEALERSHIP_ON_FLAG = 0
+12.811 55: RECOVERY_ON_FLAG = 0
+12.814 56: CONSUMER_ON_FLAG = 1
+12.817 57: TRIP_START_VIBRATION_DEBOUNCE = 5
+12.821 58: TRIP_END_VIBRATION_DEBOUNCE = 30
+12.825 59: HEARTBEAT_USE_GPS = 1
+12.829 60: TRIP_START_USE_GPS = 0
+12.832 61: TRIP_END_USE_GPS = 1
+12.835 62: MOVE_USE_GPS = 1
+12.838 63: STOP_USE_GPS = 1
+12.840 64: MOVE_DEALERSHIP_USE_GPS = 0
+12.844 65: SERVER_SIDE_FLAG = 1
+12.847 66: AT_CMD_RETRY_MAX = 20
+12.851 67: VIBRATION_SLEEP_FLAG = 0
+12.854 68: TRIP_STARTED_FLAG = 0
+12.857 -End of Settings-----------------------------
+quit
+15.426 cmd Recieved:: quitings
+15.430 Unknown cmd: quitings
+20.038 gps sats=0, hac= 999
+30.251 gps sats=0, hac= 999
+40.464 gps sats=0, hac= 999
+40.009 gps sats=0, hac= 999
+60.435 gps sats=0, hac= 999
+10.140 gps sats=0, hac= 999
+20.352 gps sats=0, hac= 999
+settings
+26.481 cmd Recieved:: settings
+26.484 -Flags (Internal use only, Not a part of the setttings.-----
+26.491 0: SETTING_UPDATE_FLAG = 0
+26.494 -Settings------------------------------------
+26.499 1: HEARTBEAT_INTERVAL = 60
+26.502 2: NETWORK_MAX_TIMEOUT = 60000
+26.506 3: NETWORK_RETRY_INTERVAL = 15000
+26.510 4: COMM_RESET_HEARTBEAT_COUNT = 24
+26.514 5: TEMPERATURE_THRESHOLD_HIGH = 60
+26.518 6: TEMPERATURE_THERESHOLD_LOW = -35
+26.522 7: UPDATE_SETTING_INTERVAL = 604800
+26.526 8: NGP_VERSION = 202182159
+26.530 9: GPS_FIX_MAX_TIMEOUT = 120000
+26.533 10: MIN_SATS = 4
+26.536 11: MAX_HAC = 40
+26.538 12: TRACK_MOVE_INTERVAL = 300
+26.542 13: TRACK_STOP_INTERVAL = 61200
+26.545 14: TRACK_SHUTDOWN_ODR = 2
+26.549 15: TRACK_SHUTDOWN_THRESHOLD = 3
+26.553 16: TRACK_SHUTDOWN_SCALE = 0
+26.556 17: TRACK_SHUTDOWN_DURATION = 2
+26.560 18: TRACK_WAKEUP_ODR = 2
+26.563 19: TRACK_WAKEUP_SCALE = 0
+26.566 20: TRACK_WAKEUP_THRESHOLD = 3
+26.570 21: TRACK_WAKEUP_DURATION = 2
+26.573 22: UPDATE_MAX_TIMEOUT = 40000
+26.577 23: UPDATE_RETRY_INTERVAL = 15000
+26.581 24: NETWORK_REPORT_SERVER = 52.37.248.117
+26.586 25: NETWORK_REPORT_PORT = 50010
+26.589 26: DMAN_IP_ADDR = 52.10.226.61
+26.593 27: DMAN_PORT = 51010
+26.596 28: APN = m2m.telus.iot
+26.599  29: UUID0 = 0x10203
+26.602  30: UUID1 = 0x4050607
+26.605  31: UUID2 = 0x8090a0b
+26.608  32: UUID3 = 0xc0d0e0f
+26.611 33: DISCOVERY_COUNT_MAX = 0
+26.614 34: FAST_HEARTBEAT_INTERVAL = 120
+26.618 35: NUMBER_GPS_MSGS = 5
+26.621 36: BATTERY_VOLTAGE_GOAL = 3600
+26.625 37: BATTERY_VOLTAGE_HYSTERESIS = 100
+26.629 38: BATTERY_MAJOR_CYCLE_SLEEP = 61200
+26.633 39: BATTERY_MAJOR_CYCLE_SLEEPX = 10
+26.637 40: BATTERY_CYCLE_LENGTH = 20000
+26.641 41: BATTERY_CYCLE_REST_LENGTH = 90000
+26.646 42: BATTERY_MAX_REFRESH_CYCLES = 2
+26.650 43: BATTERY_MAX_TOTAL_CYCLES = 75
+26.654 44: DEALERSHIP_MOVE_INTERVAL = 60
+26.658 45: DEALERSHIP_STOP_INTERVAL = 61200
+26.662 46: DEALERSHIP_SHUTDOWN_ODR = 2
+26.665 47: DEALERSHIP_SHUTDOWN_THRESHOLD = 3
+26.670 48: DEALERSHIP_SHUTDOWN_SCALE = 0
+26.674 49: DEALERSHIP_SHUTDOWN_DURATION = 2
+26.678 50: DEALERSHIP_WAKEUP_ODR = 2
+26.681 51: DEALERSHIP_WAKEUP_SCALE = 0
+26.685 52: DEALERSHIP_WAKEUP_THRESHOLD = 3
+26.689 53: DEALERSHIP_WAKEUP_DURATION = 2
+26.693 54: DEALERSHIP_ON_FLAG = 0
+26.697 55: RECOVERY_ON_FLAG = 0
+26.700 56: CONSUMER_ON_FLAG = 1
+26.703 57: TRIP_START_VIBRATION_DEBOUNCE = 5
+26.707 58: TRIP_END_VIBRATION_DEBOUNCE = 30
+26.712 59: HEARTBEAT_USE_GPS = 1
+26.715 60: TRIP_START_USE_GPS = 0
+26.718 61: TRIP_END_USE_GPS = 1
+26.721 62: MOVE_USE_GPS = 1
+26.724 63: STOP_USE_GPS = 1
+26.727 64: MOVE_DEALERSHIP_USE_GPS = 0
+26.730 65: SERVER_SIDE_FLAG = 1
+26.734 66: AT_CMD_RETRY_MAX = 20
+26.737 67: VIBRATION_SLEEP_FLAG = 0
+26.740 68: TRIP_STARTED_FLAG = 0
+26.743 -End of Settings-----------------------------
+30.333 gps sats=0, hac= 999
+system clock 32 MHz
+system startup ... ...
+Copyright (c) 2023 Positioning Universal Inc.
+VERSION: GG100 MAIN MCU V1.0(Sep 10 2024 19:05:48)
+Reset Reason Register : c000000
+Current device state is :  
+RTC Date and Time : [01/01/00 00:00:00]
+0.208 ERR:consts apn, dman server ip/port not stored in flash
+0.214 +++++++++++++++++++++setting init  ver c0d0e0f len 171 date 0
+0.221 Next state is 0
+0.423 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> switch released, switch State = 1
+0.429 System wakeup: bootup count = 69, switch status = 0, mems interrupt 0
+0.436 ++++++++++++++++++++state change: Factory -> Shipping
+0.442 cell shutdown
+0.444 ------------------cell change state: power off
+0.449 go shutdown
+0.451 gps shutdown
+0.453
+None
+>> MAIN APP <<
+0.455 Wakeup from shipping state
+0.458 First time Boot
+0.700 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  flash len 369
+0.706 ++++++++++++++++++++state change: Shipping -> Disconnect Alert Get Fix
+0.713 cell shutdown
+0.716 ------------------cell change state: power off
+0.720 go shutdown
+0.722 gps wake
+0.724 VBOOST is enabled!!!
+0.727 GPS power up!!!
+0.829 gps wake
+0.830 VBOOST is enabled!!!
+0.833 GPS power up!!!
+Waking-up from shipping state or 4 times of registration failure: NETWORK_MAX_TIMEOUT 300000
+0.944 gps sats=0, hac= 0
+2.471 cmd Recieved:: None
+2.474 Unknown cmd: None
+10.146 gps sats=0, hac= 999
+settings
+17.296 cmd Recieved:: settings
+17.299 -Flags (Internal use only, Not a part of the setttings.-----
+17.306 0: SETTING_UPDATE_FLAG = 0
+17.309 -Settings------------------------------------
+17.314 1: HEARTBEAT_INTERVAL = 60
+17.317 2: NETWORK_MAX_TIMEOUT = 60000
+17.321 3: NETWORK_RETRY_INTERVAL = 15000
+17.325 4: COMM_RESET_HEARTBEAT_COUNT = 24
+17.329 5: TEMPERATURE_THRESHOLD_HIGH = 60
+17.333 6: TEMPERATURE_THERESHOLD_LOW = -35
+17.337 7: UPDATE_SETTING_INTERVAL = 604800
+17.341 8: NGP_VERSION = 202182159
+17.345 9: GPS_FIX_MAX_TIMEOUT = 120000
+17.348 10: MIN_SATS = 4
+17.351 11: MAX_HAC = 40
+17.353 12: TRACK_MOVE_INTERVAL = 300
+17.357 13: TRACK_STOP_INTERVAL = 61200
+17.360 14: TRACK_SHUTDOWN_ODR = 2
+17.364 15: TRACK_SHUTDOWN_THRESHOLD = 3
+17.368 16: TRACK_SHUTDOWN_SCALE = 0
+17.371 17: TRACK_SHUTDOWN_DURATION = 2
+17.375 18: TRACK_WAKEUP_ODR = 2
+17.378 19: TRACK_WAKEUP_SCALE = 0
+17.381 20: TRACK_WAKEUP_THRESHOLD = 3
+17.385 21: TRACK_WAKEUP_DURATION = 2
+17.388 22: UPDATE_MAX_TIMEOUT = 40000
+17.392 23: UPDATE_RETRY_INTERVAL = 15000
+17.396 24: NETWORK_REPORT_SERVER = 52.37.248.117
+17.401 25: NETWORK_REPORT_PORT = 50010
+17.404 26: DMAN_IP_ADDR = 52.10.226.61
+17.408 27: DMAN_PORT = 51010
+17.411 28: APN = m2m.telus.iot
+17.414  29: UUID0 = 0x10203
+17.417  30: UUID1 = 0x4050607
+17.420  31: UUID2 = 0x8090a0b
+17.423  32: UUID3 = 0xc0d0e0f
+17.426 33: DISCOVERY_COUNT_MAX = 0
+17.429 34: FAST_HEARTBEAT_INTERVAL = 120
+17.433 35: NUMBER_GPS_MSGS = 5
+17.436 36: BATTERY_VOLTAGE_GOAL = 3600
+17.440 37: BATTERY_VOLTAGE_HYSTERESIS = 100
+17.444 38: BATTERY_MAJOR_CYCLE_SLEEP = 61200
+17.448 39: BATTERY_MAJOR_CYCLE_SLEEPX = 10
+17.452 40: BATTERY_CYCLE_LENGTH = 20000
+17.456 41: BATTERY_CYCLE_REST_LENGTH = 90000
+17.461 42: BATTERY_MAX_REFRESH_CYCLES = 2
+17.465 43: BATTERY_MAX_TOTAL_CYCLES = 75
+17.469 44: DEALERSHIP_MOVE_INTERVAL = 60
+17.473 45: DEALERSHIP_STOP_INTERVAL = 61200
+17.477 46: DEALERSHIP_SHUTDOWN_ODR = 2
+17.480 47: DEALERSHIP_SHUTDOWN_THRESHOLD = 3
+17.485 48: DEALERSHIP_SHUTDOWN_SCALE = 0
+17.489 49: DEALERSHIP_SHUTDOWN_DURATION = 2
+17.493 50: DEALERSHIP_WAKEUP_ODR = 2
+17.496 51: DEALERSHIP_WAKEUP_SCALE = 0
+17.500 52: DEALERSHIP_WAKEUP_THRESHOLD = 3
+17.504 53: DEALERSHIP_WAKEUP_DURATION = 2
+17.508 54: DEALERSHIP_ON_FLAG = 0
+17.512 55: RECOVERY_ON_FLAG = 0
+17.515 56: CONSUMER_ON_FLAG = 1
+17.518 57: TRIP_START_VIBRATION_DEBOUNCE = 5
+17.522 58: TRIP_END_VIBRATION_DEBOUNCE = 30
+17.526 59: HEARTBEAT_USE_GPS = 1
+17.530 60: TRIP_START_USE_GPS = 0
+17.533 61: TRIP_END_USE_GPS = 1
+17.536 62: MOVE_USE_GPS = 1
+17.539 63: STOP_USE_GPS = 1
+17.542 64: MOVE_DEALERSHIP_USE_GPS = 0
+17.545 65: SERVER_SIDE_FLAG = 1
+17.548 66: AT_CMD_RETRY_MAX = 20
+17.552 67: VIBRATION_SLEEP_FLAG = 0
+17.555 68: TRIP_STARTED_FLAG = 0
+17.558 -End of Settings-----------------------------
+20.127 gps sats=0, hac= 999
