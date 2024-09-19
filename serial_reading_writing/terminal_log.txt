@@ -3062,3 +3062,145 @@ settings
 17.555 68: TRIP_STARTED_FLAG = 0
 17.558 -End of Settings-----------------------------
 20.127 gps sats=0, hac= 999
+system clock 32 MHz
+system startup ... ...
+Copyright (c) 2023 Positioning Universal Inc.
+VERSION: GG100 MAIN MCU V1.0(Sep 10 2024 19:05:48)
+Reset Reason Register : c000000
+Current device state is :  
+RTC Date and Time : [01/01/00 00:00:02]
+0.080 ERR:consts apn, dman server ip/port not stored in flash
+0.086 +++++++++++++++++++++setting init  ver c0d0e0f len 171 date 0
+0.093 Next state is 10
+0.296 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> switch released, switch State = 1
+0.302 System wakeup: bootup count = 73, switch status = 0, mems interrupt 0
+2.509 Switch released > 2 sec, wakeup
+2.512
+>> MAIN APP <<
+2.514 ++++++++++++++++++++state change: Disconnect Alert Get Fix -> Heartbeat Get GPS
+2.522 cell shutdown
+2.524 ------------------cell change state: power off
+2.529 go shutdown
+2.531 gps wake
+2.533 VBOOST is enabled!!!
+2.536 GPS power up!!!
+2.638 gps wake
+2.639 VBOOST is enabled!!!
+2.642 GPS power up!!!
+Buf = $CCMSG,GSV,1,0 | Length = 14
+Buf = $CCMSG,VTG,1,1 | Length = 14
+Buf = $CCCFG,1 | Length = 8
+Waking-up on normal state (using Settings #2): NETWORK_MAX_TIMEOUT 60000
+5.831 gps sats=0, hac= 999
+127.053 D2H still low!!!
+127.055 HIFC over
+[01/01/00 00:02:09] MODEM: RECV 15 |
+[01/01/00 00:02:09] MODEM: SEND 11|AT+CFUN=1
+127.569 cell << AT+CFUN=1
+hello
+system clock 32 MHz
+system startup ... ...
+Copyright (c) 2023 Positioning Universal Inc.
+VERSION: GG100 MAIN MCU V1.0(Sep 10 2024 19:05:48)
+Reset Reason Register : c000000
+Current device state is :  
+RTC Date and Time : [09/19/24 21:48:15]
+0.036 ERR:consts apn, dman server ip/port not stored in flash
+0.041 +++++++++++++++++++++setting init  ver c0d0e0f len 171 date 0
+0.049 Next state is 8
+0.251 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> switch released, switch State = 1
+0.257 System wakeup: bootup count = 74, switch status = 0, mems interrupt 0
+settings
+2.464 Switch released > 2 sec, wakeup
+2.467
+>> MAIN APP <<
+2.469 ++++++++++++++++++++state change: Heartbeat Shutdown -> Heartbeat Get GPS
+2.477 cell shutdown
+2.479 ------------------cell change state: power off
+2.484 go shutdown
+2.486 gps wake
+2.487 VBOOST is enabled!!!
+2.490 GPS power up!!!
+2.592 gps wake
+2.593 VBOOST is enabled!!!
+2.596 GPS power up!!!
+Buf = $CCMSG,GSV,1,0 | Length = 14
+Buf = $CCMSG,VTG,1,1 | Length = 14
+Buf = $CCCFG,1 | Length = 8
+settings
+Waking-up on normal state (using Settings #2): NETWORK_MAX_TIMEOUT 60000
+5.785 gps sats=0, hac= 999
+6.287 cmd Recieved:: settings
+6.290 -Flags (Internal use only, Not a part of the setttings.-----
+6.297 0: SETTING_UPDATE_FLAG = 0
+6.300 -Settings------------------------------------
+6.305 1: HEARTBEAT_INTERVAL = 60
+6.308 2: NETWORK_MAX_TIMEOUT = 60000
+6.311 3: NETWORK_RETRY_INTERVAL = 15000
+6.315 4: COMM_RESET_HEARTBEAT_COUNT = 24
+6.319 5: TEMPERATURE_THRESHOLD_HIGH = 60
+6.323 6: TEMPERATURE_THERESHOLD_LOW = -35
+6.327 7: UPDATE_SETTING_INTERVAL = 604800
+6.331 8: NGP_VERSION = 202182159
+6.334 9: GPS_FIX_MAX_TIMEOUT = 120000
+6.338 10: MIN_SATS = 4
+6.340 11: MAX_HAC = 40
+6.343 12: TRACK_MOVE_INTERVAL = 300
+6.346 13: TRACK_STOP_INTERVAL = 61200
+6.350 14: TRACK_SHUTDOWN_ODR = 2
+6.353 15: TRACK_SHUTDOWN_THRESHOLD = 3
+6.357 16: TRACK_SHUTDOWN_SCALE = 0
+6.360 17: TRACK_SHUTDOWN_DURATION = 2
+6.364 18: TRACK_WAKEUP_ODR = 2
+6.367 19: TRACK_WAKEUP_SCALE = 0
+6.370 20: TRACK_WAKEUP_THRESHOLD = 3
+6.374 21: TRACK_WAKEUP_DURATION = 2
+6.377 22: UPDATE_MAX_TIMEOUT = 40000
+6.381 23: UPDATE_RETRY_INTERVAL = 15000
+6.385 24: NETWORK_REPORT_SERVER = 52.37.248.117
+6.389 25: NETWORK_REPORT_PORT = 50010
+6.393 26: DMAN_IP_ADDR = 52.10.226.61
+6.396 27: DMAN_PORT = 51010
+6.399 28: APN = m2m.telus.iot
+6.402  29: UUID0 = 0x10203
+6.405  30: UUID1 = 0x4050607
+6.408  31: UUID2 = 0x8090a0b
+6.411  32: UUID3 = 0xc0d0e0f
+6.413 33: DISCOVERY_COUNT_MAX = 0
+6.417 34: FAST_HEARTBEAT_INTERVAL = 120
+6.421 35: NUMBER_GPS_MSGS = 5
+6.424 36: BATTERY_VOLTAGE_GOAL = 3600
+6.427 37: BATTERY_VOLTAGE_HYSTERESIS = 100
+6.431 38: BATTERY_MAJOR_CYCLE_SLEEP = 61200
+6.436 39: BATTERY_MAJOR_CYCLE_SLEEPX = 10
+6.440 40: BATTERY_CYCLE_LENGTH = 20000
+6.443 41: BATTERY_CYCLE_REST_LENGTH = 90000
+6.448 42: BATTERY_MAX_REFRESH_CYCLES = 2
+6.451 43: BATTERY_MAX_TOTAL_CYCLES = 75
+6.455 44: DEALERSHIP_MOVE_INTERVAL = 60
+6.459 45: DEALERSHIP_STOP_INTERVAL = 61200
+6.463 46: DEALERSHIP_SHUTDOWN_ODR = 2
+6.467 47: DEALERSHIP_SHUTDOWN_THRESHOLD = 3
+6.471 48: DEALERSHIP_SHUTDOWN_SCALE = 0
+6.475 49: DEALERSHIP_SHUTDOWN_DURATION = 2
+6.479 50: DEALERSHIP_WAKEUP_ODR = 2
+6.483 51: DEALERSHIP_WAKEUP_SCALE = 0
+6.486 52: DEALERSHIP_WAKEUP_THRESHOLD = 3
+6.490 53: DEALERSHIP_WAKEUP_DURATION = 2
+6.494 54: DEALERSHIP_ON_FLAG = 0
+6.497 55: RECOVERY_ON_FLAG = 0
+6.501 56: CONSUMER_ON_FLAG = 1
+6.504 57: TRIP_START_VIBRATION_DEBOUNCE = 5
+6.508 58: TRIP_END_VIBRATION_DEBOUNCE = 30
+6.512 59: HEARTBEAT_USE_GPS = 1
+6.515 60: TRIP_START_USE_GPS = 0
+6.518 61: TRIP_END_USE_GPS = 1
+6.521 62: MOVE_USE_GPS = 1
+6.524 63: STOP_USE_GPS = 1
+6.527 64: MOVE_DEALERSHIP_USE_GPS = 0
+6.530 65: SERVER_SIDE_FLAG = 1
+6.533 66: AT_CMD_RETRY_MAX = 20
+6.536 67: VIBRATION_SLEEP_FLAG = 0
+6.540 68: TRIP_STARTED_FLAG = 0
+6.543 -End of Settings-----------------------------
+10.132 gps sats=0, hac= 999
